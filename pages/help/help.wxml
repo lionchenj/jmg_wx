@@ -1,0 +1,24 @@
+<view class='help-title'>好友助力</view>
+<view class='help-text'>帮TA
+  <image src="{{avatarurl?avatarurl:'../../images/head.png'}}" class="icon-size"></image>
+  助力领取奖励，你也有一份哦
+</view>
+<view class='mt-20'>已助力好友</view>
+<scroll-view class="me-grain-list" scroll-y="true" bindscrolltolower="nextPage">
+  <view wx:for="{{list}}" wx:key="{{index}}" class="grain-item flex flex-between">
+    <view class="flex">
+      <view class="flex">
+        <image src="{{item.avatarurl}}" class="icon-size"></image>
+        <text class="fs-28 txt-color-00 grain-name">{{item.nickname}}</text>
+      </view>
+    </view>
+    <view class="grain-item-r">
+      <view class="fs-28 txt-color-97 grain-sum">{{item.time}}</view>
+    </view>
+  </view>
+</scroll-view>
+<view class='fixed-bottom ml-20'>
+<official-account></official-account>
+  <button class='txt-color-ff bg-color-ed' bindtap='getShare'>为他助力</button>
+  <button class='txt-color-ed bd-color-ed mt-20' bindtap='goIndex'>我也要谷粒</button>
+</view>

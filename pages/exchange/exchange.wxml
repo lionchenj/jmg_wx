@@ -1,0 +1,24 @@
+<!--pages/exchange/exchange.wxml-->
+<view class="container">
+  <view class="exchange-top bg-color-33">
+    <view class="txt-color-ed fs-64 fwbold">{{score}}</view>
+    <view class="flex flex-center mt-10">
+      <image src="../../images/icons/icon-grain.png" class="grain-icon"></image>
+      <text class="fs-28 txt-color-ff grain-txt">谷粒</text>
+    </view>
+    <navigator url="../exchange-record/exchange-record" class="nor-btn fs-22 txt-color-97 mt-40">兑换记录</navigator>
+  </view>
+  <view class="exchange-list-mask">
+    <block wx:for="{{exchangeList}}" wx:key="{{item.id}}" class="exchange-list">
+      <view class="record-item bg-color-97 flex flex-between">
+        <view class="record-item-l">
+          <view class="txt-color-00 fs-34">{{item.title}}</view>
+          <view class="mt-20 txt-color-97 fs-28">{{item.desc}}</view>
+        </view>
+        <view class="record-item-r" data-data="{{item}}" bindtap='showExchange'>
+          <view class="record-item-btn">兑换</view>
+        </view> 
+      </view>
+    </block>
+  </view>
+</view>

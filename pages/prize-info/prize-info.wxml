@@ -1,0 +1,24 @@
+<navigator url='/pages/prize-take/prize-take?type=1&weixinid={{weixinid}}' class='prize-info-list mt-40 bd-top-line'>
+  微信号
+  <text>></text>
+  <input disabled placeholder='请输入微信号' value="{{weixinid}}"></input>
+</navigator>
+<navigator url='/pages/prize-take/prize-take?type=2&mobile={{mobile}}' class='prize-info-list'>
+  手机号
+  <text>></text>
+  <input disabled placeholder='请输入手机号' value="{{mobile}}"></input>
+</navigator>
+<navigator url='/pages/prize-take/prize-take?type=3&money_address={{money_address}}' class='prize-info-list'>
+  收款地址
+  <text>></text>
+  <input disabled placeholder='编辑收款地址' value="{{money_address}}"></input>
+</navigator>
+<!-- <navigator url='/pages/addlist/addlist' class='prize-info-list'> -->
+  <!-- <navigator url='/pages/prize-take/prize-take?type=4' class='prize-info-list'> -->
+  <view class='prize-info-list' bindtap='chooseAddress'>
+  收货地址
+  <text>></text>
+  <input disabled placeholder='编辑收货地址' value="{{address}}"></input>
+<!-- </navigator> -->
+</view>
+<view class='prize-info-text'>加密谷尊重并保护用户隐私，此处获取您的个人信息只用于奖励发放；我们承诺在任何情况下都不会泄露您的个人信息给第三方。</view>

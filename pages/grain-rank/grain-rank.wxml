@@ -1,0 +1,36 @@
+<!--pages/grain-rank/grain-rank.wxml-->
+<view class="container">
+  <view class="grain-rank-mask">
+    <view class="search-tab flex flex-between">
+      <view class="fs-32 txt-left {{type == '1'?'col-00':''}}" bindtap="showRanktab" data-type="1">总榜</view>
+      <view class="fs-32 txt-center {{type == '2'?'col-00':''}}" bindtap="showRanktab" data-type="2">日榜</view>
+      <view class="fs-32 txt-right {{type == '3'?'col-00':''}}" bindtap="showRanktab" data-type="3">月榜</view>
+    </view>
+    <view class="me-grain-list">
+      <view wx:for="{{ranklist}}" wx:key="{{index}}" class="grain-item flex flex-between">
+        <view class="flex">
+          <view class="grain-num {{index<3?'grain-num-top':''}}">{{index+1}}</view>
+          <view class="flex grain-info">
+            <image src="{{item.avatarurl?item.avatarurl:'../../images/head.png'}}" class="icon-size"></image>
+            <text class="fs-28 txt-color-00 grain-name">{{item.nickname}}</text>
+          </view>
+        </view>
+        <view class="grain-item-r">
+          <view class="fs-28 txt-color-ed grain-sum">{{item.number}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{my=='0'}}" class="grain-rank-me flex flex-between bd-top-line">
+    <view class="flex">
+      <view class="grain-num">999+</view>
+      <view class="flex grain-info">
+        <image src="../../images/head.png" class="icon-size"></image>
+        <text class="fs-28 txt-color-00 grain-name">Allen</text>
+      </view>
+    </view>
+    <view class="grain-item-r">
+      <view class="fs-28 txt-color-ed grain-sum">4343</view>
+    </view>
+  </view>
+</view>

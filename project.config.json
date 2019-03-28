@@ -1,0 +1,68 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.5",
+	"appid": "wx0805446472f17bc7",
+	"projectname": "jmg",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 2,
+			"list": [
+				{
+					"id": 0,
+					"name": "二码",
+					"pathName": "pages/help/help",
+					"query": "openid=oDtCP4qvHCgrT5cro4cm9_cnsoms",
+					"scene": "1012"
+				},
+				{
+					"id": 1,
+					"name": "二码",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": "1011"
+				},
+				{
+					"id": 2,
+					"name": "分享",
+					"pathName": "pages/index/index",
+					"query": "id=32",
+					"scene": "1036",
+					"referrerInfo": {
+						"appId": "wx0805446472f17bc7"
+					}
+				}
+			]
+		}
+	}
+}

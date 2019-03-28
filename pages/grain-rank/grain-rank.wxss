@@ -1,0 +1,19 @@
+/* pages/grain-rank/grain-rank.wxss */
+
+.grain-rank-mask{
+  padding: 0 30rpx 30rpx 30rpx;
+}
+.search-tab>view{
+  width: 33.33%;
+  line-height: 88rpx;
+  color: #979797;
+}
+.grain-rank-me{
+  padding: 30rpx;
+  position:fixed;
+  bottom: 0;
+  width: 690rpx;
+}
+.col-00{
+ color: #000000 !important;
+}

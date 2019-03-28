@@ -1,0 +1,59 @@
+/* pages/me/me.wxss */
+.me-top{
+  width: 100%;
+  height: 386rpx;
+  padding: 20rpx 40rpx;
+  box-sizing:border-box;
+  position: relative;
+}
+.me-top-bg{
+  width: 500rpx;
+  height: 220rpx;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.me-info-r{
+  padding-left: 30rpx;
+}
+.user-head{
+  width: 96rpx;
+  height: 96rpx;
+  border-radius: 50%;
+}
+.me-grain{
+  margin-top: 40rpx;
+}
+.task-center{
+  padding: 30rpx;
+}
+.task-title{
+  padding-bottom: 30rpx;
+}
+.grain-rankings{
+  padding: 0 30rpx 30rpx 30rpx;
+}
+.sign-screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.sign-screen-bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  overflow: hidden;
+}
+.index-first {
+  height: 846rpx;
+  width: 622rpx;
+  padding-bottom: 90rpx;
+}

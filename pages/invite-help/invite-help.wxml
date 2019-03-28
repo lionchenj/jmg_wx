@@ -1,0 +1,11 @@
+<view class='invite-code'>
+  <image class='ercode-img' src='{{qrcode}}'></image>
+</view>
+<view class='txt-center fs-34'>
+  <text>将二维码分享给朋友</text>
+  <text>每一位好友助力成功获得 {{number}} 谷粒</text>
+</view>
+<view class='fixed-bottom'>
+  <button class='txt-color-ed bd-color-ed' bindtap='saveImg'>保存图片</button>
+  <button class='txt-color-ff bg-color-ed' open-type='share'>分享给好友</button>
+</view>

@@ -1,0 +1,14 @@
+<!--pages/exchange-record/exchange-record.wxml-->
+<view class="container">
+  <!-- <view class="fs-26 txt-color-97 exchange-record-time"></view> -->
+  <view wx:for="{{exchangelist}}" wx:key="{{index}}" class="exchange-record-item bg-color-ff flex flex-between">
+    <view class="record-item-l">
+      <view class="txt-color-00 fs-34">{{item.gift_name}}</view>
+      <view class="mt-20 txt-color-97 fs-28">{{item.type==1?'兑换':'抽奖'}}</view>
+    </view>
+    <view class="exchange-record-r">
+      <view class="txt-color-97 fs">{{item.time}}</view>
+      <view class="mt-20 txt-color-97 fs">{{item.spend}}</view>
+    </view> 
+  </view>
+</view>

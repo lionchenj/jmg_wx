@@ -1,0 +1,10 @@
+/* pages/article/article.wxss */
+web-view{
+  height: 90rpx;
+}
+.article-back{
+  width: 50%;
+  height: 80rpx;
+  display: flex;
+  bottom: 0;
+}

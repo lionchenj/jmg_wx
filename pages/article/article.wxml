@@ -1,0 +1,4 @@
+<web-view style='height: 550px;' src="{{link}}"></web-view>
+<view class='article-back'>
+<button>返回首页</button>
+</view>

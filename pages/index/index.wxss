@@ -1,0 +1,211 @@
+/**index.wxss**/
+
+page {
+  background-color: #ececec;
+}
+
+.banner {
+  width: 100%;
+  /* overflow: hidden; */
+}
+
+.slide-image {
+  width: 100%;
+  height:100%;
+}
+
+.notice {
+  width: 100%;
+  height: 48rpx;
+  background-color: #979797;
+  color: #d8d8d8;
+  line-height: 48rpx;
+  padding-left: 20rpx;
+}
+
+.index-btn {
+  text-align: center;
+  width: 20%;
+  padding: 20rpx 0;
+}
+
+.btn-area-text {
+  display: inline-block;
+  width: 100%;
+  color: #929497;
+}
+
+.article-list {
+  width: 87%;
+  margin: auto;
+}
+
+.article-item {
+  margin-bottom: 20rpx;
+}
+
+.article-item-1, .article-item-2 {
+  padding-bottom: 20rpx;
+}
+
+.article-txt {
+  padding: 20rpx 20rpx;
+  display: block;
+  line-height:48rpx;
+}
+
+.forward-mask {
+  margin: 0;
+  border: 0;
+  background: #fff;
+  line-height: 48rpx;
+}
+
+button::after{
+border: none;
+}
+
+.forward-text {
+  padding-left: 20rpx;
+}
+
+.article-bottom {
+  padding: 0 20rpx;
+}
+
+.article-img2 {
+  width: 96rpx;
+  height: 96rpx;
+  padding-right: 20rpx;
+  padding-top: 20rpx;
+}
+
+/* 签到弹窗 */
+
+.sign-screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.sign-screen-bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.sign-box {
+  width: 80%;
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  background-color: #fff;
+  padding: 40rpx;
+  z-index: 101;
+  box-sizing: border-box;
+}
+
+.sign-item {
+  width: 21.33%;
+  height: 100rpx;
+  padding: 40rpx 5%;
+  text-align: center;
+}
+
+.sign-item image {
+  width: 88rpx;
+  height: 74rpx;
+  position: relative;
+}
+
+.sign-item image text {
+  position: absolute;
+  top: 10rpx;
+  left: 0;
+  width: 88rpx;
+  height: 74rpx;
+  font-size: 24rpx;
+  font-weight:simbold;
+}
+
+.sign-item view {
+  text-align: center;
+  width: 100%;
+  padding-top: 10rpx;
+}
+
+.index-first {
+  height: 846rpx;
+  width: 622rpx;
+  padding-bottom: 90rpx;
+}
+
+.index-first .close {
+  padding-top: 30rpx;
+  text-align: center;
+}
+
+.dialog-mask {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.dialog-info {
+  position: fixed;
+  z-index: 5000;
+  width: 80%;
+  max-width: 600rpx;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.dialog-title {
+  font-size: 36rpx;
+  padding: 30rpx 30rpx 10rpx;
+}
+
+.dialog-content {
+  padding: 10rpx 30rpx 20rpx;
+  min-height: 80rpx;
+  font-size: 32rpx;
+  line-height: 1.3;
+  word-wrap: break-word;
+  word-break: break-all;
+  color: #999;
+}
+
+.dialog-footer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  line-height: 90rpx;
+  font-size: 34rpx;
+}
+
+.dialog-btn {
+  display: block;
+  -webkit-flex: 1;
+  flex: 1;
+  position: relative;
+  color: #3cc51f;
+}

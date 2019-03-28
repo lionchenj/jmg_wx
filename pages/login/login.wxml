@@ -1,0 +1,5 @@
+<!--pages/login/login.wxml-->
+<view class='container light-grey-bg'>
+  <view class='logo-text'>加密谷</view>
+  <button class='login-btn' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="goGetUserInfo">微信登录</button>
+</view>

@@ -1,0 +1,12 @@
+/* pages/grain-record/grain-record.wxss */
+page{
+  background-color: #F1F3F4;
+}
+.grain-record-time{
+  padding-left: 32rpx;
+  line-height: 64rpx;
+}
+.grain-record-item{
+  padding: 35rpx 30rpx;
+  border-bottom: 1px #eeeeee solid;
+}

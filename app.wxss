@@ -1,0 +1,255 @@
+/**app.wxss**/
+
+/* .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}  */
+
+.container {
+  min-height: 100vh;
+  height: 100%;
+  line-height: 1;
+  box-sizing: border-box;
+  position: relative;
+  /* overflow: hidden; */
+  font-size: 32rpx;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.fs-12 {
+  font-size: 12rpx;
+}
+
+.fs-22 {
+  font-size: 22rpx;
+}
+
+.fs-24 {
+  font-size: 24rpx;
+}
+
+.fs-26 {
+  font-size: 26rpx;
+}
+
+.fs-28 {
+  font-size: 28rpx;
+}
+
+.fs-32 {
+  font-size: 32rpx;
+}
+
+.fs-34 {
+  font-size: 34rpx;
+}
+
+.fs-40 {
+  font-size: 40rpx;
+}
+
+.fs-64 {
+  font-size: 64rpx;
+}
+.fwbold{
+  font-weight: bold;
+}
+.flex {
+  display: flex;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.flex-around {
+  justify-content: space-around;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-align {
+  align-items: center;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.txt-color-97 {
+  color: #979797;
+}
+
+.txt-color-ff {
+  color: #fff;
+}
+
+.txt-color-00 {
+  color: #000;
+}
+
+.txt-color-ed {
+  color: #edae3e;
+}
+
+.txt-color-f6 {
+  color: #f6f6f6;
+}
+
+.bg-color-ff {
+  background-color: #fff;
+}
+
+.bg-color-ed {
+  background-color: #edae3e;
+}
+
+.bg-color-33 {
+  background-color: #333a42;
+}
+
+.bd-top-line {
+  border-top: 1rpx #e3e3e3 solid;
+}
+
+.bd-color-ed {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1rpx solid #edae3e;
+}
+
+.mt-10 {
+  margin-top: 10rpx;
+}
+
+.mt-20 {
+  margin-top: 20rpx;
+}
+
+.mt-40 {
+  margin-top: 40rpx;
+}
+
+.ml-20 {
+  margin-left: 20rpx;
+}
+.mud-32{
+  margin: 0 32rpx;
+}
+.txt-left {
+  text-align: left;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.txt-right {
+  text-align: right;
+}
+
+.is-28 {
+  height: 28rpx;
+  width: 28rpx;
+}
+
+.icon-size {
+  height: 48rpx;
+  width: 48rpx;
+}
+
+.nor-btn {
+  padding: 10rpx 20rpx;
+  border: 1px #979797 solid;
+  border-radius: 10rpx;
+  display: inline-block;
+}
+
+.record-item {
+  background-color: #f6f6f6;
+  border-radius: 10rpx;
+  padding: 32rpx;
+  margin-bottom: 20rpx;
+}
+
+.record-item-r {
+  display: flex;
+  align-items: center;
+}
+
+.record-item-btn {
+  line-height: 40rpx;
+  padding: 10rpx 50rpx;
+  font-size: 28rpx;
+  background-color: #edae3e;
+  color: #fff;
+  border-radius: 10rpx;
+}
+
+.fixed-bottom-btn {
+  position: fixed;
+  bottom: 20rpx;
+  width: 710rpx;
+  font-size: 28rpx;
+  background-color: #edae3e;
+  color: #fff;
+}
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 20rpx;
+  width: 710rpx;
+  font-size: 28rpx;
+}
+
+.grain-icon {
+  width: 28rpx;
+  height: 32rpx;
+}
+
+.grain-txt {
+  line-height: 32rpx;
+  padding: 0 10rpx;
+}
+
+.grain-item-r {
+  display: flex;
+  align-items: center;
+}
+
+.grain-item {
+  padding: 15rpx 0;
+}
+
+.grain-num {
+  line-height: 48rpx;
+  width: 65rpx;
+  color: #979797;
+  text-align: center;
+}
+
+.grain-num-top {
+  color: #edae3e;
+}
+
+.grain-info {
+  padding-left: 30rpx;
+}
+
+.grain-name {
+  line-height: 48rpx;
+  padding-left: 30rpx;
+}

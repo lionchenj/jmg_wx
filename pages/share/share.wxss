@@ -1,0 +1,10 @@
+/* pages/share/share.wxss */
+view{
+  padding-top: 80rpx;
+  width: 100%;
+  height: 100%;
+}
+.share{
+  width: 100%;
+  height: 1610rpx;
+}

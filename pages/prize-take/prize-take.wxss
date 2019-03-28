@@ -1,0 +1,64 @@
+page {
+  background: #f4f4f4;
+}
+
+.prize-take-list {
+  height: 88rpx;
+  padding: 0 32rpx;
+  line-height: 88rpx;
+  font-size: 34rpx;
+  background: #fff;
+  border-bottom: 1rpx solid #e3e3e3;
+}
+
+.prize-take-list input {
+  line-height: 88rpx;
+  height: 88rpx;
+  /* text-align: right; */
+  padding-right: 32rpx;
+  /* float: right; */
+  color: #888;
+}
+
+.prize-info-list text {
+  float: right;
+  color: #888;
+}
+
+.prize-info-text {
+  font-size: 28rpx;
+  padding: 20rpx 32rpx;
+  color: #363a3f;
+}
+
+.task-text {
+  padding: 0 20rpx;
+  text-align: center;
+  font-size: 28rpx;
+  margin-top: 40rpx;
+}
+
+.addlist-list {
+  display: flex;
+  height: 88rpx;
+  padding: 0 32rpx;
+  line-height: 88rpx;
+  font-size: 34rpx;
+  background: #fff;
+  border-bottom: 1rpx solid #e3e3e3;
+}
+
+.addlist-list text {
+  width: 25%;
+  height: 88rpx;
+}
+
+.addlist-list input {
+  width: 55%;
+  height: 88rpx;
+}
+
+.addlist-list icon {
+  width: 20%;
+  height: 88rpx;
+}

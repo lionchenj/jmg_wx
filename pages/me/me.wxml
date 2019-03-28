@@ -1,0 +1,63 @@
+<!--pages/me/me.wxml-->
+<view class="container">
+  <view class="me-top bg-color-33">
+    <image src="../../images/bg.png" class="me-top-bg"></image>
+    <form class="me-info">
+      <view class="flex flex-start">
+        <image src="{{headurl?headurl:'../../images/head.png'}}" class="user-head"></image>
+        <view class="me-info-r">
+          <view name="userName" class="user-name fs-34 txt-color-ff">{{nickname?nickname:'用户昵称'}}</view>
+          <navigator url="../prize-info/prize-info" class="prize-info fs-22 txt-color-97 mt-20">填写领奖信息</navigator>
+        </view>
+      </view>
+    </form>
+    <view class="me-grain">
+      <view class="txt-color-ed fs-64 fwbold">{{score}}</view>
+      <view class="flex flex-start mt-10">
+        <image src="../../images/icons/icon-grain.png" class="grain-icon"></image>
+        <text class="fs-28 txt-color-ff grain-txt">谷粒</text>
+      </view>
+      <navigator url="../grain-record/grain-record" class="nor-btn fs-22 txt-color-97 mt-40">谷粒记录</navigator>
+    </view>
+  </view>
+  <view class="task-center">
+    <view class="task-title fs-40 txt-color-00">任务中心</view>
+    <view class="task-list">
+      <view wx:for="{{tasklist}}" wx:key="{{index}}" class="record-item bg-color-97 flex flex-between">
+        <view class="record-item-l">
+          <view class="txt-color-00 fs-34">{{item.title}}
+            <text class="txt-color-97" wx:if="{{item.total > 0 }}">({{item.lock}}/{{item.total}})</text>
+          </view>
+          <view class="mt-20 txt-color-97 fs-28">{{item.explain}}</view>
+        </view>
+        <view wx:if="{{item.status}}" class="record-item-r txt-color-97">
+          已完成
+        </view>
+        <view wx:else class="record-item-r txt-color-97">
+          <view wx:if="{{item.title == '抽奖大转盘'}}" bindtap='taskGo' data-title="{{item.title}}" class="record-item-btn">点击抽奖</view>
+          <view wx:else bindtap='taskGo' data-title="{{item.title}}" class="record-item-btn">做任务</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="grain-rankings">
+    <view class="task-title flex flex-between">
+      <view class="fs-40 txt-color-00">谷粒排行</view>
+      <navigator url="../grain-rank/grain-rank" class="fs-28 txt-color-97">查看更多</navigator>
+    </view>
+    <view class="me-grain-list">
+      <view wx:for="{{ranklist}}" wx:key="{{index}}" class="grain-item flex flex-between">
+        <view class="flex">
+          <view class="grain-num {{index<3?'grain-num-top':''}}">{{index+1}}</view>
+          <view class="flex grain-info">
+            <image src="{{item.avatarurl?item.avatarurl:'../../images/head.png'}}" class="icon-size"></image>
+            <text class="fs-28 txt-color-00 grain-name">{{item.nickname}}</text>
+          </view>
+        </view>
+        <view class="grain-item-r">
+          <view class="fs-28 txt-color-ed grain-sum">{{item.number}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

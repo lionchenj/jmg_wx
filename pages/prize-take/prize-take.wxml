@@ -1,0 +1,24 @@
+<form bindsubmit='setwxid'>
+  <view wx:if="{{isType == '1'}}" class='prize-take-list mt-40 bd-top-line'>
+    <input placeholder='请输入微信号' name="weixinid" value='{{weixinid}}'></input>
+  </view>
+  <view wx:if="{{isType == '2'}}" class='prize-take-list mt-40 bd-top-line'>
+    <input placeholder='请输入手机号' value='{{mobile}}' name="mobile"></input>
+  </view>
+  <view wx:if="{{isType == '3'}}" class='prize-take-list mt-40 bd-top-line'>
+    <input placeholder='编辑首款地址' name="money_address" value='{{money_address}}'></input>
+  </view>
+  <view wx:if="{{isType == '4'}}" class='addlist-body mt-40'>
+    
+  </view>
+  <view wx:if="{{isType=='5'}}" class='prize-take-list mt-40 bd-top-line'>
+    <input placeholder='编辑用户昵称' name="nickname"></input>
+  </view>
+  <view class='txt-color-97 fs-24 mud-32'>{{PStext}}</view>
+  <view wx:if="{{isType == '2'}}" class='task-text mt-40'>
+    <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" class='txt-color-ff bg-color-ed'>授权获取手机号码</button>
+  </view>
+  <view wx:else class='task-text'>
+    <button form-type="submit" class='txt-color-ff bg-color-ed'>保存</button>
+  </view>
+</form>

@@ -1,0 +1,13 @@
+/* pages/exchange/exchange.wxss */
+page{
+    background-color:#ffffff;
+}
+.exchange-top{
+  text-align: center;
+  width: 100%;
+  height: 256rpx;
+  padding-top: 40rpx;
+}
+.exchange-list-mask{
+  padding: 30rpx;
+}

@@ -1,0 +1,10 @@
+<!--pages/grain-record/grain-record.wxml-->
+<view class="container">
+  <view wx:for="{{recordlist}}" wx:key="{{index}}">
+    <view class="fs-26 txt-color-97 grain-record-time">{{item.time}}</view>
+    <view wx:for="{{item.list}}" wx:for-item="list" wx:key="{{index}}" class="grain-record-item bg-color-ff flex flex-between">
+      <view class="fs-34">{{list.type}}</view>
+      <view class="fs-34 txt-color-97">{{list.plusminus=='1'?'+':'-'}}{{list.number}}</view>
+    </view>
+  </view>
+</view>

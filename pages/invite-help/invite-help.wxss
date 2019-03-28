@@ -1,0 +1,25 @@
+/* pages/invite-help/invite-help.wxss */
+.invite-code{
+  padding-top: 150rpx;
+  margin: auto;
+  height: 320rpx;
+  width: 320rpx;
+}
+.invite-code image,.ercode-img{
+  height: 100%;
+  width: 100%;
+}
+.txt-center{
+  margin-top: 70rpx;
+}
+.txt-center text{
+  display: inline-block;
+}
+.fixed-bottom{
+  margin-left: 45rpx
+}
+.fixed-bottom button{
+  float: left;
+  width: 320rpx;
+  margin-right: 20rpx;
+}

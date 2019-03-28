@@ -1,0 +1,126 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="banner">
+    <swiper autoplay="true" interval="2000" duration="500">
+      <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+        <swiper-item>
+          <navigator url='/pages/article/article?id={{item.id}}' class="slide-image">
+            <image src="{{item.banner_cover}}" class="slide-image" />
+          </navigator>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view wx:if="{{notice?notice:''}}" class="notice fs-22">{{notice}}</view>
+  <view class="btn-area flex flex-between">
+    <navigator open-type='switchTab' url="/pages/exchange/exchange" hover-class="navigator-hover" class="index-btn">
+      <image src="../../images/icons/exchange-1.png" class="icon-size"></image>
+      <text class="fs-22 btn-area-text">兑换</text>
+    </navigator>
+    <navigator url="/pages/taskTurntable/taskTurntable" hover-class="navigator-hover" class="index-btn">
+      <image src="../../images/icons/icon-luck.png" class="icon-size"></image>
+      <text class="fs-22 btn-area-text">抽奖</text>
+    </navigator>
+    <navigator url="/pages/invite-help/invite-help" hover-class="navigator-hover" class="index-btn">
+      <image src="../../images/icons/icon-help.png" class="icon-size"></image>
+      <text class="fs-22 btn-area-text">好友助力</text>
+    </navigator>
+    <view class="index-btn sign" bindtap='showSign'>
+      <image src="../../images/icons/icon-sign.png" class="icon-size"></image>
+      <text class="fs-22 btn-area-text">每日签到</text>
+    </view>
+    <navigator url='/pages/share/share' hover-class="navigator-hover" class="index-btn">
+      <image src="../../images/icons/icon-follow.png" class="icon-size"></image>
+      <text class="fs-22 btn-area-text">关注</text>
+    </navigator>
+  </view>
+  <official-account></official-account>
+  <view class="article-list">
+    <navigator wx:for='{{newslist}}' wx:key='{{item.id}}' url='/pages/article/article?id={{item.id}}' class="article-item article-item-1 w-100 bg-color-ff">
+      <image src="{{item.cover}}" class="w-100" mode="widthFix"></image>
+      <text class="fs-34 article-txt txt-color-00">{{item.title}}</text>
+      <view class="flex flex-between article-bottom">
+        <view class="txt-color-97 forward-mask fs-28">{{item.time}}</view>
+        <view class='flex'>
+        <view class="forward-mask flex-align flex">
+          <image src="../../images/icons/icon-grain.png" class="is-28"></image>
+          <text class="txt-color-97 forward-text fs-24">200</text>
+        </view>
+        <button open-type='share' catchtap="catchcap" data-data="{{item}}" class="forward-mask flex-align flex">
+          <image src="../../images/icons/icon-forward.png" class="is-28"></image>
+          <text class="txt-color-00 forward-text fs-24">转发</text>
+        </button>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>
+<view class="sign-screen" wx:if="{{isSign}}">
+  <view class="sign-screen-bg" bindtap="showSign"></view>
+  <view class="sign-box">
+    <view class="fs-28 txt-center">已连续签到
+      <text class="txt-color-ed fwbold">{{signday}}</text> 天
+    </view>
+    <view class="sign-list flex flex-wrap flex-around">
+      <view class="sign-item" data-id='1' bindtap='signIn'>
+        <image src='../../images/icons/sign_in.png'>
+          <text class='txt-color-ff'>{{signnum[0]}}</text>
+        </image>
+        <view class="txt-color-ed fs-28">第一天</view>
+      </view>
+      <view class="sign-item" data-id='2' bindtap='signIn'>
+        <image src="{{signday>1?'../../images/icons/sign_in.png':'../../images/icons/sign_in_no.png'}}">
+          <text class="txt-color-ff">{{signnum[1]}}</text>
+        </image>
+        <view class="fs-28 {{signday>1?'txt-color-ed':''}}">第二天</view>
+      </view>
+      <view class="sign-item" data-id='3' bindtap='signIn'>
+        <image src="{{signday>2?'../../images/icons/sign_in.png':'../../images/icons/sign_in_no.png'}}">
+          <text class="txt-color-ff">{{signnum[2]}}</text>
+        </image>
+        <view class="{{signday>2?'txt-color-ed':''}} fs-28">第三天</view>
+      </view>
+      <view class="sign-item">
+        <image src="{{signday>3?'../../images/icons/sign_in.png':'../../images/icons/sign_in_no.png'}}">
+          <text class="txt-color-ff">{{signnum[3]}}</text>
+        </image>
+        <view class="{{signday>3?'txt-color-ed':''}} fs-28">第四天</view>
+      </view>
+      <view class="sign-item">
+        <image src="{{signday>4?'../../images/icons/sign_in.png':'../../images/icons/sign_in_no.png'}}">
+          <text class="txt-color-ff">{{signnum[4]}}</text>
+        </image>
+        <view class="{{signday>4?'txt-color-ed':''}} fs-28">第五天</view>
+      </view>
+      <view class="sign-item">
+        <image src="{{signday>5?'../../images/icons/sign_in.png':'../../images/icons/sign_in_no.png'}}">
+          <text class="txt-color-ff">{{signnum[5]}}</text>
+        </image>
+        <view class="{{signday>5?'txt-color-ed':''}} fs-28">第六天</view>
+      </view>
+      <view class="sign-item">
+        <image src="{{signday>6?'../../images/icons/sign_in.png':'../../images/icons/sign_in_no.png'}}">
+          <text class="txt-color-ff">{{signnum[6]}}</text>
+        </image>
+        <view class="{{signday>6?'txt-color-ed':''}} fs-28">第七天</view>
+      </view>
+    </view>
+    <button class='txt-color-ff bg-color-ed mt-40' bindtap="gotoNew">看文章得积分</button>
+  </view>
+</view>
+<view class="sign-screen record-item-r flex-center" wx:if="{{isFirst}}" bindtap='showFirst'>
+  <view class="sign-screen-bg"></view>
+  <image class='index-first' src='../../images/first.png'>
+    <view class='txt-color-ff close' bindtap='showFirst'>关闭</view>
+  </image>
+</view>
+<view class='dialog-container' wx:if="{{isShow}}">
+  <view class='dialog-mask'></view>
+  <view class='dialog-info'>
+    <view class='dialog-title'></view>
+    <view class='dialog-content'>{{ content }}</view>
+    <view class='dialog-footer'>
+      <button class='dialog-btn' bindtap='showContact' open-type="contact">{{ confirmText }}</button>
+    </view>
+  </view>
+</view>

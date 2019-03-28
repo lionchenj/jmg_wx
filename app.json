@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/help/help",
+    "pages/invite-help/invite-help",
+    "pages/me/me",
+    "pages/grain-rank/grain-rank",
+    "pages/exchange/exchange",
+    "pages/prize-info/prize-info",
+    "pages/exchange-record/exchange-record",
+    "pages/grain-record/grain-record",
+    "pages/taskTurntable/taskTurntable",
+    "pages/prize-take/prize-take",
+    "pages/login/login",
+    "pages/article/article",
+    "pages/share/share"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#333A42",
+    "navigationBarTitleText": "加密谷",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#D8D8D8",
+    "selectedColor": "#EDAE3E",
+    "backgroundColor": "#232426",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "文章",
+        "iconPath": "images/icons/tab-1.png",
+        "selectedIconPath": "images/icons/tab-1-active.png"
+      },
+      {
+        "pagePath": "pages/exchange/exchange",
+        "text": "兑换",
+        "iconPath": "images/icons/tab-2.png",
+        "selectedIconPath": "images/icons/tab-2-active.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/icons/tab-3.png",
+        "selectedIconPath": "images/icons/tab-3-active.png"
+      }
+    ]
+  }
+}

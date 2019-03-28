@@ -1,0 +1,37 @@
+/* pages/help/help.wxss */
+
+page {
+  background: #333a42;
+  color: #fff;
+  font-size: 28rpx;
+  text-align: center;
+}
+
+.help-title {
+  font-size: 96rpx;
+  font-weight: bold;
+}
+
+.help-text {
+  position: relative;
+  background: #5b6167;
+  border-radius: 200rpx;
+  height: 96rpx;
+  width: 670rpx;
+  line-height: 96rpx;
+  margin: 40rpx auto 0;
+}
+
+.help-text image {
+  position: relative;
+  top: 10rpx;
+}
+
+.me-grain-list {
+  margin: 30rpx;
+  padding: 0 30rpx;
+  background: #fff;
+  border-radius: 8rpx;
+  width: 630rpx;
+  height: 500rpx;
+}

@@ -1,0 +1,16 @@
+/* pages/exchange-record/exchange-record.wxss */
+page{
+  background-color: #F1F3F4;
+}
+.exchange-record-time{
+  padding-left: 32rpx;
+  line-height: 64rpx;
+}
+.exchange-record-item{
+  background-color: #ffffff;
+  padding: 32rpx;
+  margin-bottom: 20rpx;
+}
+.exchange-record-r{
+  text-align: right;
+}
